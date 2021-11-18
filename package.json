@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "jest": "^27.0.6",
+    "@types/jest": "^27.0.1",
     "@tsconfig/node14": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^4.4",
     "@typescript-eslint/parser": "^4.4",
@@ -19,6 +23,7 @@
     "lint": "eslint ./src/ --ext .ts --max-warnings 0",
     "clean": "rm -rf ./dist/*",
     "dev": "npx tsc -w",
+    "unit-tests": "jest tests/unit",
     "build": "npx tsc -p tsconfig.pkg.json"
   },
   "repository": {
