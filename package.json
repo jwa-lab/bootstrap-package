@@ -23,9 +23,9 @@
     "lint": "eslint ./src/ --ext .ts --max-warnings 0",
     "clean": "rm -rf ./dist/*",
     "dev": "npx tsc -w",
-    "int-tests": "jest int",
-    "unit-tests": "jest unit",
-    "tests": "jest int --passWithNoTests && jest unit --passWithNoTests",
+    "tests:int": "jest int",
+    "tests:unit": "jest unit",
+    "tests": "jest",
     "build": "npx tsc -p tsconfig.pkg.json"
   },
   "repository": {
